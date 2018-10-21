@@ -15,35 +15,23 @@
     
        
     <body>
-       <!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">one</a></li>
-        <li><a href="#!">two</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">three</a></li>
-        <li><a href="#!">three</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">three</a></li>
-        <li><a href="#!">three</a></li>
-      </ul>
-      <nav>
-        <div class="nav-wrapper light-green lighten-1">
-          <a href="#!" class="brand-logo "><i class=" material-icons">all_inclusive</i></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            
-            <li><a href="#about">Contact</a></li>
-            <!-- Dropdown Trigger -->
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-          </ul>
-        </div>
-      </nav>
+            <nav>
+                    <div class="nav-wrapper  light-green lighten-2">
+                      <a href="#projects" class="brand-logo center header">Projects</a>
+                      <!-- <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="sass.html">Sass</a></li>
+                        <li><a href="badges.html">Components</a></li>
+                        <li><a href="collapsible.html">JavaScript</a></li>
+                      </ul> -->
+                    </div>
+                  </nav>
+                      
       
         <div id="index-banner" class="parallax-container">
           <div class="section no-pad-bot">
             <div class="container">
               <br><br>
-              <h1 class="header center">Projects</h1>
+              <!-- <h1 class=" projects header center" >PROJECTS</h1> -->
               
           
               <br>
@@ -60,7 +48,7 @@
             <!--   Icon Section   -->
             <div class="row">
                     <div class="col s12 m4">
-                            <div class="card z-depth-3">
+                            <div id="projects"  class="card z-depth-3">
                               <div class="card-image">
                                 <img src="assets/images/Screen Shot 2018-10-14 at 2.56.54 PM.png" style="width:227.77;height:128.63">
                                 <span class="card-title">DoorStep</span>
@@ -69,7 +57,7 @@
                                     <a class="click" href="https://dgrams99.github.io/Project-1-complete">DoorStep</a>
                                   </div>
                             
-                              <div class="card-content">
+                              <div class="card-content ">
                                 <p>This was my first group project and was alot of a fun. DoorStep is a realestate website that takes homes from an api and generates them into nice looking cards like the example above.</p>
                               </div>
                               
@@ -79,13 +67,12 @@
                             <div class="card z-depth-3" >
                               <div class="card-image">
                                 <img src="https://cdn.londonandpartners.com/visit/london-organisations/transport-system/59590-640x360-overground-train_640.jpg "alt="" style="width:227.77;height:244.63";>
-                                <span class="card-title">train</span>
+                                <span class="card-title center-align">Train Time</span>
                               </div>
-                              <div class="card-action">
-                                    <a href="#">This is a link</a>
+                              <div class="card-action center-align">
+                                    <a class="click" href="https://dgrams99.github.io/train/">Train </a>
                                   </div>
                                   
-                                
                               <div class="card-content">
                                 <p>I am a very simple card. I am good at containing small bits of information.
                                 I am convenient because I require little markup to use effectively.</p>
@@ -93,24 +80,26 @@
                               
                             </div>
                           </div>
-                    <div class="col s12 m4">
+
+                    <div id="more" class="col s12 m4">
                             <div class="card z-depth-3">
                               <div class="card-image">
                                 <img src="assets/images/background1.jpg">
                                 <span class="card-title">Card Title</span>
                               </div>
+                              <div class="card-action center-align">
+                                    <a href="#">This is a link</a>
+                                  </div>
                               <div class="card-content">
                                 <p>I am a very simple card. I am good at containing small bits of information.
                                 I am convenient because I require little markup to use effectively.</p>
                               </div>
-                              <div class="card-action">
-                                <a href="#">This is a link</a>
-                              </div>
+                              
                             </div>
                           </div>
                           <div class="hide-card">
-                    <div class="col s12 m4">
-                            <div class="card z-depth-3">
+                    <div  class="col s12 m4">
+                            <div  class="card z-depth-3 ">
                               <div class="card-image">
                                 <img src="assets/images/background3.jpg">
                                 <span class="card-title">Card Title</span>
@@ -158,11 +147,11 @@
                     
               </div>
               <div class="center-align show-cards">
-              <a class="  btn-floating btn-Medium pulse "><i class="material-icons ">arrow_drop_down</i></a>
+              <a href="#more" class="  btn-floating btn-Medium pulse "><i class="material-icons ">arrow_drop_down</i></a>
               
             </div>
             <div class="go-up center-align">
-            <a class="  btn-floating btn-Medium pulse "><i class="material-icons ">arrow_drop_up</i></a>
+            <a href="#more" class="  btn-floating btn-Medium pulse "><i class="material-icons ">arrow_drop_up</i></a>
            </div>
           </div>
         </div>
@@ -188,7 +177,7 @@
         <div class="container center-align">
                 <div class="section">
                     <h4>Contact Me</h4>
-                    <a href="https://www.linkedin.com/in/daniel-grams-8b7133172/" class="fa fa-linkedin"></a>
+                    <a  href="https://www.linkedin.com/in/daniel-grams-8b7133172/" class="fa fa-linkedin click"></a>
                     
                 </div>
             </div>

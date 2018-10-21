@@ -8,6 +8,7 @@ $(document).ready(function(){
      $('body').fadeIn(800);
      
      $('.click').click(function(e) {
+         
         e.preventDefault();
         newLocation = this.href;
         $('body').fadeOut('slow', newpage);
@@ -106,8 +107,10 @@ $('a[href*="#"]')
     }
   });
 
+  var loop =  $('.header') = true;
 
 
+ 
 
 
 
