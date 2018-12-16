@@ -1,0 +1,98 @@
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* background-color: #fffff2; */
+    width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+/* cursor */
+:root, a {
+	cursor: none; 	
+}
+
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+	z-index: 10000;
+}
+
+.cursor-dot {
+    --size-cursor-dot: 8px;
+    width: var(--size-cursor-dot);
+    height: var(--size-cursor-dot);
+    background-color: #f58220;
+}
+
+.cursor-dot-outline {
+    --size-cursor-dot-outline: 40px;
+    width: var(--size-cursor-dot-outline);
+    height: var(--size-cursor-dot-outline);
+    background-color: #f5822050;
+}
+
+/* projects */
+
+#box{
+    font-size: 20px;
+    width: 300px;
+    padding: 10px;
+    border: 3px solid gray;
+    margin: 150px;
+    position: relative;
+    left: 200px;
+   
+}
+a{
+    font-size: 40px;
+}

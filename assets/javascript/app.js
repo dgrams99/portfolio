@@ -6,6 +6,7 @@ $(document).ready(function(){
      $('.sidenav').sidenav();
      $('body').css('display', 'none');
      $('body').fadeIn(800);
+ 
      
      $('.click').click(function(e) {
          
@@ -107,40 +108,24 @@ $('a[href*="#"]')
     }
   });
 
-  var loop =  $('.header') = true;
-
-
- 
-
-
-
-// function loop(){
-// $(".header").animate({
-//     color: "#e0f2f1",
-//     color: "#80cbc4",
-//     color: "#26a69a",
-//     color: "#00897b ",
-//     color: "#00695c",
-//     color: "#00695c",
+ $("#pro").on("click" , function(){
+     console.log("click")
+     
+     $("box").animate({
+        width: "1000px",
+        height: "500px",
+        left: "-150px"
     
-// },1000 , 'linear' , function(){
-//     loop()
-// })
+         
+     })
+ })
+$('#box').on('click' , function(){
+    console.log("click")
+    
 
-// }
-// loop();
-
-
-// function header(){
-//     $('.header').css({right:0});
-//     $(".header").animate({color: "#e0f2f1",color: "#00695c"},1000, 'linear', function(){
-//         header();
-//     } )
-// }
-// header();
-});
+})
        
-  
+})
     
   
 // end of document ready

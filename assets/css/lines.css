@@ -1,0 +1,87 @@
+#wrap {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.line-reveal {
+  width: 120%;
+  height: 3px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.line-reveal.show .overlay {
+  animation: wipe 3s ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.line-reveal .overlay {
+  background: #fffff2;
+  height: 10px;
+  position: absolute;
+  top: -5px;
+  width: 100%;
+  transform-origin: 90% 0;
+}
+
+.line-reveal .line {
+  border: 3px dashed white;
+  backface-visibility: hidden;
+}
+
+#line-a {
+  left: 0;
+  top: 90%;
+  transform-origin: 0 0;
+  transform: rotate(-55deg);
+}
+
+#line-a .line {
+  border-color: #ff9900;
+}
+
+#line-b {
+  left: 0;
+  bottom: 20%;
+  transform-origin: 0 0;
+  transform: rotate(-0deg);
+}
+
+#line-b .line {
+  border-color: black;
+}
+
+#line-c {
+  right: 10%;
+  bottom: 0;
+  transform-origin: 100% 0;
+  transform: rotate(70deg);
+}
+
+#line-c .line {
+  border-color: #ff9900;
+}
+#line-d {
+  right: 1%;
+  bottom: 0;
+  transform-origin: 200% 0;
+  transform: rotate(10deg);
+}
+
+#line-d .line {
+  border-color: gray;
+}
+
+@keyframes wipe {
+  to {
+      transform: scaleX(0);
+  }
+}
+
+/* name */

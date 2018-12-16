@@ -1,18 +1,10 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
 
- nav ul a,
- nav .brand-logo {
-   
- }
- 
  p {
+   font-size: 20px;
    line-height: 2rem;
+ }
+ h4{
+   color: #26a69a
  }
  
  .sidenav-trigger {
@@ -57,7 +49,8 @@
  }
  
  body{
-     background-color: 		#fafafa
+     background-color: 		#fafafa;
+     font-family: 'Open Sans Condensed', sans-serif;
  }
  .fa-linkedin {
   background: #007bb5;
@@ -89,4 +82,40 @@
 .card:hover{
   -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+/* cursor */
+:root, a {
+	cursor: none; 	
+}
+
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+	z-index: 10000;
+}
+
+.cursor-dot {
+    --size-cursor-dot: 8px;
+    width: var(--size-cursor-dot);
+    height: var(--size-cursor-dot);
+    background-color: #f58220;
+}
+
+.cursor-dot-outline {
+    --size-cursor-dot-outline: 40px;
+    width: var(--size-cursor-dot-outline);
+    height: var(--size-cursor-dot-outline);
+    background-color: #f5822050;
+}
+a{
+  font-size: 25px;
 }
